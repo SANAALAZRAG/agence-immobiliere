@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion | Dar Sakane</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo/logo.png" alt="Dar Sakane Logo">
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Navigation principale -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="biens.html">Nos Biens</a></li>
+                    <li><a href="fes.html">Fès</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Formulaire de connexion -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <h2>Connexion</h2>
+                <form action="connexion-process.php" method="post" id="login-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Se souvenir de moi</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn-auth">Se connecter</button>
+                    </div>
+                    
+                    <div class="auth-links">
+                        <a href="mot-de-passe-oublie.html">Mot de passe oublié?</a>
+                        <p>Pas encore de compte? <a href="inscription.html">S'inscrire</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dar Sakane - Agence Immobilière au Maroc</p>
+            <p>123 Avenue Mohammed V, Fès | Tél: +212 535 123 456 | Email: contact@darsakane.ma</p>
+        </div>
+    </footer>
+
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
